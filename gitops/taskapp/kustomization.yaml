@@ -12,3 +12,4 @@ resources:
   - manifests/migration-job.yaml
   - manifests/frontend-service.yaml
   - manifests/frontend-deployment.yaml
+  - manifests/ingress.yaml
