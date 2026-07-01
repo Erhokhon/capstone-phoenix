@@ -7,3 +7,6 @@ resources:
   - manifests/postgres-secret.yaml
   - manifests/backend-configmap.yaml
   - manifests/postgres.yaml
+  - manifests/backend-service.yaml
+  - manifests/backend-deployment.yaml
+  - manifests/migration-job.yaml
