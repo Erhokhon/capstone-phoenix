@@ -5,3 +5,5 @@ resources:
   - manifests/namespace.yaml
   - manifests/backend-secret.yaml
   - manifests/postgres-secret.yaml
+  - manifests/backend-configmap.yaml
+  - manifests/postgres.yaml
