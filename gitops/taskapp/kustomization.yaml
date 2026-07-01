@@ -10,3 +10,5 @@ resources:
   - manifests/backend-service.yaml
   - manifests/backend-deployment.yaml
   - manifests/migration-job.yaml
+  - manifests/frontend-service.yaml
+  - manifests/frontend-deployment.yaml
