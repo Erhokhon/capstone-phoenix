@@ -3,11 +3,21 @@ kind: Ingress
 metadata:
   name: taskapp-ingress
   namespace: taskapp
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   ingressClassName: traefik
+
+  tls:
+    - hosts:
+        - phoenix-capstone.duckdns.org
+      secretName: phoenix-capstone-tls
+
   rules:
-    - http:
+    - host: phoenix-capstone.duckdns.org
+      http:
         paths:
+          # leave your existing /api and / paths here unchanged
           - path: /api
             pathType: Prefix
             backend:
